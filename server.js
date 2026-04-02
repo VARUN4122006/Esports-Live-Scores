@@ -32,6 +32,9 @@ const validateApiKey = (req, res, next) => {
 };
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Esports Backend is running successfully!');
+});
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'Backend is running',
